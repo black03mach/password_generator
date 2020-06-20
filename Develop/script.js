@@ -10,7 +10,7 @@ function writePassword() {
     passwordText.value = password;
 }
 
-// generatePassword function should be below
+// generatePassword function should be below, which RETURNS the password variable at the bottop which is passed into the function above
 function generatePassword() {
 
   // Password Prompt
@@ -27,6 +27,7 @@ function generatePassword() {
     || isNaN(passwordLength)){
     passwordLength = parseInt(prompt("Please choose a number greater than 8 and less than 128 for your password length."));
   }
+  
     // Boolean to pass into for each desired character type. 
     // WHEN prompted for character types to include in the password
     // THEN I choose lowercase, uppercase, numeric, and/or special characters
